@@ -2,13 +2,15 @@
 
 import sys
 sys.path.insert(0, '..')
-import optparse
+# import optparse
+import argparse
 from Engine.Update import UpdateVersion
 from Engine.ExecAndPrint import execute
 
 
 def main():
-    parser = optparse.OptionParser(add_help_option=False)
+    #parser = optparse.OptionParser(add_help_option=False)
+    parser = argparse.ArgumentParser(description='Explot find tool')
 
     parser.add_option("-s", "--search", dest="keywords", type="string",
                                         help="text for search",)
